@@ -1,109 +1,118 @@
 # 🔐 Secure Image Steganography
 
-An interactive Python application built using Streamlit that hides and extracts secret messages inside digital images using Least Significant Bit (LSB) steganography.
+An interactive **Python web application** that hides and extracts secret messages inside digital images using **Least Significant Bit (LSB) steganography**.
 
-## 🔗 Live Demo:
-https://secure-image-steganography.streamlit.app/
+Built with **Streamlit, OpenCV, and NumPy**, the application allows users to securely embed text inside images and retrieve hidden messages through a simple browser interface.
 
-## Overview
+---
+
+# 🚀 Live Demo
+
+🔗 https://secure-image-steganography.streamlit.app/
+
+---
+
+# 📸 Screenshots
+
+## Application Interface
+Upload an image and choose whether to encode or decode a hidden message.
+
+![Interface](screenshots/interface.png)
+
+---
+
+## Enter Secret Message
+Upload an image and type the message you want to hide.
+
+![Encode Message](screenshots/encode-message.png)
+
+---
+
+## Message Encoded Successfully
+The application embeds the secret message into the image and allows the user to download the encoded image.
+
+![Encoded Success](screenshots/encoded-success.png)
+
+---
+
+## Upload Encoded Image for Decoding
+Upload the encoded image to extract the hidden message.
+
+![Decode Message](screenshots/decode-message.png)
+
+---
+
+## Decoded Hidden Message
+The hidden message is successfully extracted from the encoded image.
+
+![Decoded Success](screenshots/decoded-success.png)
+
+---
+
+# 📖 Overview
 
 This application allows users to:
 
-- Encode secret text messages inside images
-
+- Encode secret messages inside images
 - Decode hidden messages from encoded images
-
 - Detect whether an image contains embedded data
-
 - Preserve image quality using minimal bit modification
 
-- The application runs in the browser while being powered entirely by Python.
+The entire application runs in the **browser** while the processing is handled by **Python**.
 
-## How It Works
+---
 
-Digital images are composed of pixels, and each pixel contains three color channels:
+# ⚙️ How It Works
 
-- Red
+Digital images consist of pixels, and each pixel contains three color channels:
 
-- Green
+- Red  
+- Green  
+- Blue  
 
-- Blue
+Each channel stores values between **0–255**, represented in **binary format**.
 
-Each channel stores values between 0–255, represented in binary format.
+### Encoding Process
 
-This project:
+1. The input message is converted into binary.
+2. The **Least Significant Bit (LSB)** of each pixel channel is modified.
+3. A special delimiter (`#####`) is appended to mark the end of the message.
+4. The modified image is generated and provided for download.
 
-- Converts the input message into binary.
+### Decoding Process
 
-- Modifies only the least significant bit (LSB) of each color channel.
+1. Extract LSB bits from the image.
+2. Convert binary data back into text.
+3. Search for the delimiter.
+4. If the delimiter exists → display the hidden message.  
+   If not → show **"No hidden message found."**
 
-- Appends a delimiter (#####) to indicate the end of the message.
+Because only the **last bit of each channel** is modified, the visual difference in the image is nearly invisible.
 
-During decoding:
+---
 
-- Extracts LSB bits
+# ✨ Features
 
-- Reconstructs the binary data into text
+✔ LSB-based steganography implementation  
+✔ Encode and decode secret messages  
+✔ Binary-to-text and text-to-binary conversion  
+✔ Automatic hidden message detection  
+✔ Graceful handling of non-encoded images  
+✔ Downloadable encoded image output  
+✔ Clean and interactive Streamlit interface  
 
-- Checks for the delimiter
+---
 
-If not found → displays “No hidden message found”
+# 🛠 Tech Stack
 
-By altering only one bit per channel, visual distortion is negligible.
-
-## ✨ Features
-
-- LSB-based steganography implementation
-
-- Binary-to-text and text-to-binary conversion
-
-- Automatic hidden message detection
-
-- Graceful handling of non-encoded images
-
-- Downloadable encoded image output
-
-- Clean and structured Streamlit interface
-
-## 🛠 Tech Stack
-
+**Language**
 - Python
 
-- OpenCV
+**Libraries**
+- OpenCV  
+- NumPy  
+- Streamlit  
 
-- NumPy
+---
 
-- Streamlit
-
-## 📂 Project Structure
-
-```
-secure-image-steganography/
-│
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Project dependencies
-├── runtime.txt         # Python version for deployment
-├── .gitignore
-└── README.md
-```
-
-## ▶️ Run Locally
-
-### Install dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### Start the application
-
-```
-python -m streamlit run app.py
-```
-
-The application will open automatically in your browser.
-
-## 👩‍💻 About Me
-
-I’m Salma, a Computer Science Engineering student.
-I love building interactive projects!
+# 📂 Project Structure
