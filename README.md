@@ -116,3 +116,67 @@ Because only the **last bit of each channel** is modified, the visual difference
 ---
 
 # 📂 Project Structure
+
+```
+secure-image-steganography/
+│
+├── app.py
+├── requirements.txt
+├── runtime.txt
+├── .gitignore
+├── README.md
+│
+└── screenshots/
+├── interface.png
+├── encode-message.png
+├── encoded-success.png
+├── decode-message.png
+└── decoded-success.png
+```
+
+---
+
+# ▶️ Run Locally
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/salmashaik45/secure-image-steganography.git
+
+cd secure-image-steganography
+```
+
+
+### 2. Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 3. Run the application
+
+```
+python -m streamlit run app.py
+```
+
+The application will automatically open in your browser.
+
+---
+
+# 🔐 Applications
+
+- Secure communication  
+- Digital watermarking  
+- Data privacy  
+- Cybersecurity research  
+- Information hiding techniques  
+
+---
+
+# 👩‍💻 Author
+
+Salma Shaik
+
+GitHub: https://github.com/salmashaik45
+
+---
