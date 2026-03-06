@@ -175,7 +175,7 @@ The application will automatically open in your browser.
 
 # 👩‍💻 Author
 
-Salma Shaik
+**Salma Shaik**
 
 GitHub: https://github.com/salmashaik45
 
