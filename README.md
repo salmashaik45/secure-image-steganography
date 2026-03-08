@@ -166,7 +166,6 @@ The application will automatically open in your browser.
 ## 👩‍💻 Author
 
 **Salma Shaik**
-
 Computer Science and Engineering Student
 
 GitHub: https://github.com/salmashaik45
