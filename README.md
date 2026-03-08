@@ -6,50 +6,50 @@ Built with **Streamlit, OpenCV, and NumPy**, the application allows users to sec
 
 ---
 
-# 🚀 Live Demo
+## 🚀 Live Demo
 
 🔗 https://secure-image-steganography.streamlit.app/
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
-## Application Interface
+### Application Interface
 Upload an image and choose whether to encode or decode a hidden message.
 
 ![Interface](screenshots/interface.png)
 
 ---
 
-## Enter Secret Message
+### Enter Secret Message
 Upload an image and type the message you want to hide.
 
 ![Encode Message](screenshots/encode-message.png)
 
 ---
 
-## Message Encoded Successfully
+### Message Encoded Successfully
 The application embeds the secret message into the image and allows the user to download the encoded image.
 
 ![Encoded Success](screenshots/encoded-success.png)
 
 ---
 
-## Upload Encoded Image for Decoding
+### Upload Encoded Image for Decoding
 Upload the encoded image to extract the hidden message.
 
 ![Decode Message](screenshots/decode-message.png)
 
 ---
 
-## Decoded Hidden Message
+### Decoded Hidden Message
 The hidden message is successfully extracted from the encoded image.
 
 ![Decoded Success](screenshots/decoded-success.png)
 
 ---
 
-# 📖 Overview
+## 📖 Overview
 
 This application allows users to:
 
@@ -62,7 +62,7 @@ The entire application runs in the **browser** while the processing is handled b
 
 ---
 
-# ⚙️ How It Works
+## ⚙️ How It Works
 
 Digital images consist of pixels, and each pixel contains three color channels:
 
@@ -91,7 +91,7 @@ Because only the **last bit of each channel** is modified, the visual difference
 
 ---
 
-# ✨ Features
+## ✨ Features
 
 ✔ LSB-based steganography implementation  
 ✔ Encode and decode secret messages  
@@ -103,7 +103,7 @@ Because only the **last bit of each channel** is modified, the visual difference
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 **Language**
 - Python
@@ -115,7 +115,7 @@ Because only the **last bit of each channel** is modified, the visual difference
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
 secure-image-steganography/
@@ -136,7 +136,7 @@ secure-image-steganography/
 
 ---
 
-# ▶️ Run Locally
+## ▶️ Run Locally
 
 ### 1. Clone the repository
 
@@ -163,7 +163,7 @@ The application will automatically open in your browser.
 
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
 **Salma Shaik**
 
