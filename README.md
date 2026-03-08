@@ -163,16 +163,6 @@ The application will automatically open in your browser.
 
 ---
 
-# 🔐 Applications
-
-- Secure communication  
-- Digital watermarking  
-- Data privacy  
-- Cybersecurity research  
-- Information hiding techniques  
-
----
-
 # 👩‍💻 Author
 
 **Salma Shaik**
